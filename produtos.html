@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <script src="js/funcoes.js"></script>
+        
+    </head>
+    <body> <!--Menu-->
+        <nav>
+            <a href="index.html"><img src="./imagens/fullstackbahia.jpg" alt="FULL STACK BAHIA" width="200px"></a>    
+        </nav>
+
+        <nav class="menu">
+
+            <a href="cartao.html">Cartão Full Stack Bahia</a>
+            <a href="contato.html"> Atendimento </a>
+            <a href="produtos.html"> Produtos</a>
+            <a href="lojas.html">Nossas Lojas</a>
+
+        </nav><!--Fim do Menu-->
+
+        <main>
+            <h2>ELETRODOMÉSTICOS</h2>
+        <hr>
+
+        <section class="categorias">
+            <h3>Categorias</h3>
+            <ul>
+                <li onclick="exibir_todos()">Todos (10)</li>
+                <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+                <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+                <li onclick="exibir_categoria('lavadora')">Lavadoras(3)</li>
+                <li onclick="exibir_categoria('microondas')">Micro-ondas(2)</li>
+            </ul>
+
+        </section>
+
+        <section class="produtos">
+            <div class="box_produtos" id="geladeira">
+                <img src="./imagens/geladeira1.png"  alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)"> 
+                    <br>
+                    <p>Geladeira Brastemp Inverse 3 portas 15l</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 2.740,00</strike></p>
+                    <p class="preco_novo">R$ 1.980,00</p><br>
+            </div>
+
+            <div class="box_produtos" id="geladeira">
+                <img src="./imagens/geladeira2 (2).png"alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Geladeira Brastemp Inverse 3 portas 11l</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 2.740,00</strike></p>
+                    <p class="preco_novo">R$ 1.980,00</p><br>
+
+            </div>
+
+            <div class="box_produtos" id="geladeira">
+                <img src="./imagens/geladeira3.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Geladeira Electrolux Duplex 12l</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 2.147,00</strike></p>
+                    <p class="preco_novo">R$ 1.793,00</p><br>
+
+            </div>
+
+            <div class="box_produtos" id="fogao">
+                <img src="./imagens/fogões/fogao1).png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Fogão Brastemp 4 bocas</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 3.251,00</strike></p>
+                    <p class="preco_novo">R$ 2.826,00</p><br>
+
+            </div>
+
+            <div class="box_produtos" id="fogao">
+                <img src="./imagens/fogões/fogao2.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Fogão Consul 5 bocas</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 1.038,00</strike></p>
+                    <p class="preco_novo">R$ 871,00</p><br>
+            </div>
+
+            <div class="box_produtos" id="microondas">
+                <img src="./imagens/shopping (1).png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Micro-ondas Philco Pmo 21l</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 979,00</strike></p>
+                    <p class="preco_novo">R$ 788,00</p><br>
+            </div>
+
+            <div class="box_produtos" id="lavadora">
+                <img src="./imagens/lavadouras/lava1.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Lavadora Consul</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 1.859,00</strike></p>
+                    <p class="preco_novo">R$ 1.577,00</p><br>
+            </div>
+
+            <div class="box_produtos" id="microondas">
+                <img src="./imagens/shopping.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <font face="Arial" size=2>Micro-ondas Philco Pmo 21l</font>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 628,90</strike></p>
+                    <p class="preco_novo">R$ 449,80</p><br>
+            </div>
+
+            <div class="box_produtos" id="lavadora">
+                <img src="./imagens/lavadouras/lava3.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Lavadora Electrolux 17kg</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 2.619,00</strike></p>
+                    <p class="preco_novo">R$ 2.411,00</p><br>
+            </div>
+
+            <div class="box_produtos" id="lavadora">
+                <img src="./imagens/lavadouras/lava2.png" alt="120px" onclick="destaque(this)" onmousemove="mouseMove(this)">
+                    <br>
+                    <p>Lavadora Brastemp 13kg lava e seca</p>
+                    <hr>
+                    <p class="preco_antigo"><strike>R$ 1.789,00</strike></p>
+                    <p class="preco_novo">R$ 1.541,00</p><br>
+            </div>
+
+        </section>
+        </main>
+               <br>
+               <br>
+               <br>
+               
+               <footer class="rodape">
+
+                <span>
+                    <h4 class="formas_pagamento"> 
+                        FORMAS DE PAGAMENTO
+                    </h4>
+                    <img src="./imagens/formas-de-pagamento-artenobre-enxovais.png" alt="FORMAS DE PAGAMENTO">
+                        </span>
+    
+            </footer>
+    </body>
+</html>
